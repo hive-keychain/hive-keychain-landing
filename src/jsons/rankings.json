@@ -1,0 +1,18 @@
+{
+  "weekly": {
+    "sectionTitle": "Weekly",
+    "description": "Doesn't include delegations"
+  },
+  "monthly": {
+    "sectionTitle": "Monthly",
+    "description": "Doesn't include delegations"
+  },
+  "forever": {
+    "sectionTitle": "Forever",
+    "description": "Doesn't include delegations"
+  },
+  "delegations": {
+    "sectionTitle": "Delegations",
+    "description": "This ranking shows the bests delegators"
+  }
+}

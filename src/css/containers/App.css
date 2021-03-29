@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: #fff;
+}
+
+.slide {
+  background: transparent !important;
+  padding: 2rem;
+}
+
+.alice-carousel__prev-btn-wrapper,
+.alice-carousel__next-btn-wrapper {
+  text-align: center;
+}

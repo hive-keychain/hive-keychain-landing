@@ -1,0 +1,275 @@
+{
+  "whySteemPlus": {
+    "sectionTitle": "Why SteemPlus ?",
+    "data": [
+      {
+        "title": "30+ Features",
+        "icon": "icon_features.svg",
+        "content": "<p>SteemPlus extension brings over 30 new features to your Steem experience</p><p>Available on Steemit and Busy</p><p>Many more features on our TODO list!</p>",
+        "link": {
+          "type": "anchor",
+          "to": "features",
+          "text": "Browse features"
+        }
+      },
+      {
+        "title": "SteemPlus Points",
+        "icon": "icon_points.svg",
+        "content": "<p>Use third-party <strong>Steem Apps</strong> and earn <strong>SteemPlus Points (SPP)</strong>.</p><p>SPP grant you a share of @steem-plus <strong>daily upvotes</strong></p><p>Redeem for <strong>premium features</strong></p>.",
+        "link": {
+          "type": "internal",
+          "to": "spp",
+          "text": "Learn more about SPP"
+        }
+      },
+      {
+        "title": "For the community",
+        "icon": "icon_community.svg",
+        "content": "<p>Opensource</p><p>Developement funded by upvotes from @utopian-io, @adsactly and the community</p><p>Over 3,500 daily users</p><p>Emphasis on developing features requested by the community</p>",
+        "link": {
+          "type": "external",
+          "to": "https://github.com/stoodkev/SteemPlus",
+          "text": "See the code on Github"
+        }
+      }
+    ]
+  },
+  "features": {
+    "sectionTitle": "Features",
+    "data": [
+      {
+        "title": "Voting value slider",
+        "content": "How much is your upvote/flag worth?",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/steemdev/@steem-plus/steemplus-2-5-integration-of-steemit-more-info-features"
+      },
+      {
+        "title": "Delegation",
+        "content": "Delegate your Steem Power in an instant!",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/steemplus-delegation-details"
+      },
+      {
+        "title": "Account value",
+        "content": "Get your real account value based on current Bittrex STEEM and SBD prices.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-2-1-account-value-detail-50-steem-bounty"
+      },
+      {
+        "title": "Feed+",
+        "content": "Filter and sort your feed to find the content you like!",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/steemplus-2-17-5-feed-on-busy"
+      },
+      {
+        "title": "Beneficiaries",
+        "content": "Share your rewards by setting other users as beneficiaries. @steemplus-pay will be set as a 5% beneficiary and you will earm SPP.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-1-7-share-your-rewards-with-your-friends-beneficiaries-ideal-for-the-steemfest"
+      },
+      {
+        "title": "Mentions",
+        "content": "See who mentionned you and where.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/steemplus-2-17-9-vote-and-mentions-tabs"
+      },
+      {
+        "title": "Vote Value",
+        "content": "See the SBD value of each received vote.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/steemdev/@steem-plus/steemplus-2-5-integration-of-steemit-more-info-features"
+      },
+      {
+        "title": "Signature",
+        "content": "Your posts and comments signatures are just one click away.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-2-15-signatures"
+      },
+      {
+        "title": "Resteems indicator",
+        "content": "See how many resteems you ve got and from whom.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/2-16-resteem-indicators"
+      },
+      {
+        "title": "VM and RC popup",
+        "content": "Get your Voting Mana and Resource Credits percentage, and their recharge time.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/steemplus/@steem-plus/welcome-to-hf20-get-your-voting-mana-and-rc-mana-from-steemplus"
+      },
+      {
+        "title": "Utopian",
+        "content": "Post Utopian contributions directly from Steemit. Earn bigger votes and SPP.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-220-utopian--steemplus-partnership--bigger-upvotes"
+      },
+      {
+        "title": "DTube",
+        "content": "Upload your DTube videos directly from Steemit and earn SPP.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-221-earn-more-by-posting-to-dtube-via-steemplus"
+      },
+      {
+        "title": "Steem Monsters packs",
+        "content": "Buy Steem Monsters starter and booster packs directly from your Steemit profile and earn SPP.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-31--buy-your-steem-monsters-packs-from-steemplus-and-earn-steemplus-points-spp"
+      },
+      {
+        "title": "Tokens",
+        "content": "View your tokens directly from your Steemit wallet (currently show SPP only)",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-30--the-steemplus-points-are-here-"
+      },
+      {
+        "title": "Steem Monsters Market",
+        "content": "Buy cards from Steem Monsters Marmet buy batches and earn SPP.",
+        "platforms": ["steemmonsters.png"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-35--buy-cards-by-batch-on-steem-monsters-and-earn-spp"
+      },
+      {
+        "title": "Badges",
+        "content": "Plankton or Whale? These cool profile badges will let you know!",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/more-ranks-on-steemplus-to-track-your-progression"
+      },
+      {
+        "title": "Steem Price",
+        "content": "Get STEEM and SBD price on Bittrex directly from your user dropdown.",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-1-10-showing-steem-sbd-steem-usd-and-sbd-usd-market-price"
+      },
+      {
+        "title": "Wallet",
+        "content": "Filter your wallet to find what you re looking for!",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/steemplus-wallet-changes-and-more"
+      },
+      {
+        "title": "Witness",
+        "content": "Get all the information you'll ever need about witnesses, including incoming and outgoing votes.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-2-17-7-witnesses-on-busy"
+      },
+      {
+        "title": "Rewards",
+        "content": "Get pending and claimed rewards information.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-2-17-8-rewards-and-links-tabs-on-busy"
+      },
+      {
+        "title": "Votes",
+        "content": "See all incoming and outgoing votes.",
+        "platforms": ["steemit.svg", "busy.svg"],
+        "url": "https://steemit.com/utopian-io/@stoodkev/steemplus-2-17-9-vote-and-mentions-tabs"
+      },
+      {
+        "title": "Histogram",
+        "content": "View an history of all your posts",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/steemdev/@steem-plus/steemplus-2-5-integration-of-steemit-more-info-features"
+      },
+      {
+        "title": "GIF ",
+        "content": "Pick and insert GIFs as you go!",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/steemdev/@steem-plus/steemplus-2-5-integration-of-steemit-more-info-features"
+      },
+      {
+        "title": "Favorites",
+        "content": "Set your favorites and get a direct link to their latest publications!",
+        "platforms": ["steemit.svg"],
+        "url": "https://steemit.com/utopian-io/@steem-plus/steemplus-2-6-favorite-users"
+      },
+      {
+        "title": "More",
+        "content": "Download and try it out to find all our features ;)",
+        "platforms": ["steemit.svg", "busy.svg", "steemmonsters.png"],
+        "url": ""
+      }
+    ]
+  },
+  "where": {
+    "sectionTitle": "Download",
+    "description": "SteemPlus is available natively on Chrome and Firefox. It’s also available on Opera via the `Install Chrome Extensions` plugin. <br />What are you waiting for? You are only minutes away from getting more out of your Steem experience!",
+    "browsers": [
+      {
+        "name": "Chrome",
+        "icon": "chrome",
+        "url": "https://chrome.google.com/webstore/detail/steemplus/mjbkjgcplmaneajhcbegoffkedeankaj"
+      },
+      {
+        "name": "Firefox",
+        "icon": "firefox",
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/steem-plus/"
+      },
+      {
+        "name": "Opera",
+        "icon": "opera",
+        "url": "https://github.com/stoodkev/SteemPlus/blob/master/README.md#on-opera"
+      }
+    ]
+  },
+  "screenshots": {
+    "sectionTitle": "Screenshots"
+  },
+  "reviews": {
+    "sectionTitle": "Reviews",
+    "data": [
+      {
+        "title": "Must have",
+        "review": "SteemPlus is a must have google chrome extension that makes Steeming easier and better.  Know prices, buy Steem Monster cards, know your current mana, set beneficiaries, have an off the shelf footer.  It's a great tool that augments your Steem experience.",
+        "username": "aggroed"
+      },
+      {
+        "title": "Comfortable",
+        "review": "Using steemit without steemplus is like swimming in a dress. Sure, I can do it if I have no choice, but it's uncomfortable and why would I want to?",
+        "username": "techslut"
+      },
+      {
+        "title": "Awesome",
+        "review": "SteemPlus is an awesome collection of features that I could not miss anymore!",
+        "username": "reggaemuffin"
+      },
+      {
+        "title": "Can't live without it!",
+        "review": "Using steemit.com without the SteemPlus extension is like using an old flip phone vs a smart phone. SteemPlus adds a wealth of features and information that, once you get used to, you won’t be able to live without!",
+        "username": "yabapmatt"
+      }
+    ]
+  },
+  "members": {
+    "sectionTitle": "Team",
+    "data": [
+      {
+        "name": "Quentin",
+        "position": "Founder / <a style='text-decoration: none; color: #21496C;' href='https://steemconnect.com/sign/account-witness-vote?witness=stoodkev&approve=1'><b>Witness</b></a>",
+        "username": "stoodkev"
+      },
+      {
+        "name": "Cedric",
+        "position": "Development",
+        "username": "cedricguillas"
+      },
+      {
+        "name": "Fabi",
+        "position": "Design",
+        "username": "fabiyamada"
+      },
+      {
+        "name": "Nate",
+        "position": "Creative Advisor",
+        "username": "nateaguila"
+      }
+    ]
+  },
+  "contactUs": {
+    "sectionTitle": "Contact Us",
+    "data": {
+      "description": "You need more information, or perhaps want to share your suggestions or get some assistance ?",
+      "textButton": "Discord",
+      "url": "https://discord.gg/hhBw3mv",
+      "icon": "discord.svg"
+    }
+  }
+}
