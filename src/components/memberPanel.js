@@ -9,32 +9,32 @@ const style = {};
 const imgStyle = {
   maxHeight: "15rem",
   borderRadius: "0 10px 10px 10px",
-  marginBottom: "1rem"
+  marginBottom: "1rem",
 };
 
 // Inline style for name label
 const nameStyle = {
   fontSize: "1.25rem",
   fontWeight: "600",
-  color: Const.COLOR_NAME_MEMBER,
+  color: "lightgrey",
   textDecoration: "none",
   fontFamily: "Roboto, sans-serif",
-  textTransform: "uppercase"
+  textTransform: "uppercase",
 };
 
 // Inline style for username label
 const usernameStyle = {
   fontSize: "1.25rem",
   fontWeight: "600",
-  color: Const.COLOR_USERNAME_MEMBER,
-  textDecoration: "none"
+  color: "white",
+  textDecoration: "none",
 };
 
 // Inline style for position label
 const positionStyle = {
   fontSize: "1rem",
   fontWeight: "300",
-  color: Const.COLOR_POSITION_MEMBER
+  color: "lightgrey",
 };
 
 // Create member panel. This component is used to describe members of SteemPlus team
@@ -63,7 +63,7 @@ const MemberPanel = ({ name, position, username }) => (
     <a
       rel="noopener noreferrer"
       target="_blank"
-      href={`https://steemit.com/@${username}`}
+      href={`https://peakd.com/@${username}`}
       style={usernameStyle}
     >
       @{username}

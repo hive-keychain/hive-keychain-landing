@@ -64,7 +64,7 @@
     "data": [
       {
         "name": "Quentin",
-        "position": "CEO / <a style='text-decoration: none; color: #21496C;' href='https://steemconnect.com/sign/account-witness-vote?witness=stoodkev&approve=1'><b>Witness</b></a>",
+        "position": "CEO / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=stoodkev&approve=1'><b>Witness</b></a>",
         "username": "stoodkev"
       },
       {
@@ -74,12 +74,12 @@
       },
       {
         "name": "Matt",
-        "position": "Advisor",
+        "position": "Advisor / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=yabapmatt&approve=1'><b>Witness</b></a>",
         "username": "yabapmatt"
       },
       {
         "name": "Jesse",
-        "position": "Advisor",
+        "position": "Advisor / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=aggroed&approve=1'><b>Witness</b></a>",
         "username": "aggroed"
       }
     ]
