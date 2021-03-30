@@ -14,9 +14,9 @@ const buttonStyle = {
     color: "lightgrey",
     "&:hover": {
       background: "lightgrey",
-      color: "white"
-    }
-  }
+      color: "white",
+    },
+  },
 };
 const ArrowButton = withStyles(buttonStyle)(Button);
 
@@ -33,6 +33,7 @@ class CustomCarousel extends React.Component {
     this.sizeElement = props.sizeElement;
     // Init local state
     this.state = { selectedFeature: props.selectedItem };
+    this.Carousel = React.createRef();
   }
 
   // When component is updated
@@ -52,7 +53,7 @@ class CustomCarousel extends React.Component {
               <ArrowButton
                 variant="fab"
                 aria-label="Prev"
-                onClick={() => this.Carousel._slidePrev()}
+                onClick={() => this.Carousel.current.slidePrev()}
               >
                 <KeyboardArrowLeft />
               </ArrowButton>
@@ -72,17 +73,17 @@ class CustomCarousel extends React.Component {
               // Nb items displayed also depend on the size of the screen
               responsive={{
                 0: {
-                  items: 1
+                  items: 1,
                 },
                 600: {
-                  items: this.nbElem - 1
+                  items: this.nbElem - 1,
                 },
                 1024: {
-                  items: this.nbElem
-                }
+                  items: this.nbElem,
+                },
               }}
               buttonsDisabled={true}
-              ref={el => (this.Carousel = el)}
+              ref={this.Carousel}
             >
               {this.props.children}
             </AliceCarousel>
@@ -93,7 +94,7 @@ class CustomCarousel extends React.Component {
               <ArrowButton
                 variant="fab"
                 aria-label="Next"
-                onClick={() => this.Carousel._slideNext()}
+                onClick={() => this.Carousel.current.slideNext()}
               >
                 <KeyboardArrowRight />
               </ArrowButton>

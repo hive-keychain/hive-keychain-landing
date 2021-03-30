@@ -148,42 +148,32 @@ const Content = ({ activeFeature }) => (
     <CarouselSection
       title={Data.screenshots.sectionTitle}
       tag={Formatter.tagFromTitle(Data.screenshots.sectionTitle)}
+      backgroundColor="black"
     >
-      <CustomCarousel autoPlay={true} nbElem={1} sizeElement={12}>
+      <CustomCarousel autoPlay={true} nbElem={3} sizeElement={12}>
         <div>
-          <img
-            width="100%"
-            src="public/img/screenshots/intro.jpg"
-            alt="Intro"
-          />
+          <img height={600} src="public/img/screenshots/1.png" alt="Intro" />
         </div>
         <div>
-          <img
-            width="100%"
-            src="public/img/screenshots/feedplus.jpg"
-            alt="Feed +"
-          />
+          <img height={600} src="public/img/screenshots/2.png" alt="Intro" />
         </div>
         <div>
-          <img
-            width="100%"
-            src="public/img/screenshots/ranks.jpg"
-            alt="Ranks"
-          />
+          <img height={600} src="public/img/screenshots/3.png" alt="Intro" />
         </div>
         <div>
-          <img
-            width="100%"
-            src="public/img/screenshots/valueDelegation.jpg"
-            alt="Value and Delegations"
-          />
+          <img height={600} src="public/img/screenshots/4.png" alt="Intro" />
         </div>
-        <div className="test">
-          <img
-            width="100%"
-            src="public/img/screenshots/shortcuts.jpg"
-            alt="ShortCuts"
-          />
+        <div>
+          <img height={600} src="public/img/screenshots/5.png" alt="Intro" />
+        </div>
+        <div>
+          <img height={600} src="public/img/screenshots/6.png" alt="Intro" />
+        </div>
+        <div>
+          <img height={600} src="public/img/screenshots/7.png" alt="Intro" />
+        </div>
+        <div>
+          <img height={600} src="public/img/screenshots/8.png" alt="Intro" />
         </div>
       </CustomCarousel>
     </CarouselSection>
