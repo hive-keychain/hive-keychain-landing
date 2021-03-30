@@ -28,8 +28,7 @@ const styleFeatureItem = {
 };
 
 const styleIconBrowser = {
-  width: "3rem",
-  height: "3rem",
+  height: "70px",
   marginBottom: "1rem",
 };
 
@@ -113,13 +112,19 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.where.sectionTitle}
       tag={Formatter.tagFromTitle(Data.where.sectionTitle)}
+      background="black"
     >
-      <Grid item xs={12} sm={12} md={6} lg={8}>
-        <ContentDescription content={Parser(Data.where.description)} />
-      </Grid>
       <Grid container direction="row" justify="center" alignItems="center">
         {Data.where.browsers.map((browser, i) => (
-          <Grid item xs={12} sm={12} md={3} lg={3} key={i}>
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={4}
+            lg={2}
+            style={{ margin: "50px 0px" }}
+            key={i}
+          >
             <Grid
               container
               direction="column"
@@ -127,18 +132,27 @@ const Content = ({ activeFeature }) => (
               alignItems="center"
               className="browser-item"
             >
-              <img
-                src={`public/img/browsers/${browser.icon}.svg`}
-                alt={browser.name}
-                style={styleIconBrowser}
-              />
-              <CustomButton
-                text={browser.name}
-                href={browser.url}
-                color1={Const.COLOR_BUTTON}
-                color2="white"
-                margin={"1rem"}
-              />
+              <div>
+                <a href={browser.url} target="_blank">
+                  <img
+                    src={`public/img/browsers/${browser.icon}.svg`}
+                    alt={browser.name}
+                    style={styleIconBrowser}
+                  />
+                </a>
+                {browser.name && (
+                  <div
+                    style={{
+                      color: "#B5B5B5",
+                      fontSize: 20,
+                      textTransform: "uppercase",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {browser.name}
+                  </div>
+                )}
+              </div>
             </Grid>
           </Grid>
         ))}

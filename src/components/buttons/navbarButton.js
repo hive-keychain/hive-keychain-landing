@@ -15,24 +15,24 @@ const NavbarButton = ({
   large,
   active,
   children,
-  id
+  id,
 }) => {
   const buttonStyle = {
     root: {
-      fontSize: large ? "large" : "inherit",
+      fontSize: "large",
       transition: "1s",
       WebkitTransition: "1s" /* Safari 3.1 to 6.0 */,
       float: float,
       border: "none",
       backgroundColor: color1,
-      color: color2,
+      color: active ? color2 : "lightgrey",
       fontWeight: active ? "bold" : "inherit",
       display: itemVisible ? "block !important" : "none !important",
       "&:hover": {
         backgroundColor: color2,
-        color: color1
-      }
-    }
+        color: color1,
+      },
+    },
   };
   const CustomizedButton = withStyles(buttonStyle)(Button);
   return (

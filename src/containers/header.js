@@ -82,6 +82,7 @@ const getHomeSubMenu = (navItems, activePage, setSubMenu, activeSubElement) => {
           <NavbarButton
             color1="black"
             color2="white"
+            style={{ fontWeight: "bold" }}
             text={navItems[section].sectionTitle}
             float="left"
             itemVisible={activePage === "main"}
@@ -140,7 +141,6 @@ class Header extends React.Component {
     const sticky = parseInt(banner.style.height);
 
     // if offset of the window > banner's height set the banner sticky
-    console.log(window.pageYOffset, sticky, banner);
     if (window.pageYOffset >= sticky) {
       this.setState({ sticky: true });
     } else {

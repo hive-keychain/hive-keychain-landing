@@ -75,10 +75,7 @@ class CustomCarousel extends React.Component {
                 0: {
                   items: 1,
                 },
-                600: {
-                  items: this.nbElem - 1,
-                },
-                1024: {
+                1350: {
                   items: this.nbElem,
                 },
               }}
