@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import * as Const from "../../utils/const";
 
-const style = {
+const styled = {
   padding: "50px 0",
 };
 
@@ -18,11 +18,8 @@ const titleStyle = {
 
 // Create component. Carousel section is a section which contain as main element a carousel
 // Content of the carousel are defined in the children property
-const CarouselSection = ({ title, tag, children, backgroundColor }) => (
-  <div
-    className="section carousel-section"
-    style={{ ...style, backgroundColor }}
-  >
+const CarouselSection = ({ title, tag, children, style }) => (
+  <div className="section carousel-section" style={{ ...styled, ...style }}>
     <p id={tag} style={titleStyle}>
       {title}
     </p>

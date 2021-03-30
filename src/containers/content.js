@@ -62,7 +62,7 @@ const Content = ({ activeFeature }) => (
       ))}
     </Section>
     {/* create feature section */}
-    <ImageSection
+    {/* <ImageSection
       title={Data.features.sectionTitle}
       tag={Formatter.tagFromTitle(Data.features.sectionTitle)}
       src={"bg_features.png"}
@@ -108,7 +108,7 @@ const Content = ({ activeFeature }) => (
           </div>
         ))}
       </CustomCarousel>
-    </ImageSection>
+    </ImageSection> */}
     {/* create where section */}
     <Section
       title={Data.where.sectionTitle}
@@ -148,7 +148,7 @@ const Content = ({ activeFeature }) => (
     <CarouselSection
       title={Data.screenshots.sectionTitle}
       tag={Formatter.tagFromTitle(Data.screenshots.sectionTitle)}
-      backgroundColor="black"
+      style={{ background: "linear-gradient(0.125turn,#17181c, #2d3337)" }}
     >
       <CustomCarousel autoPlay={true} nbElem={3} sizeElement={12}>
         <div>
@@ -178,7 +178,7 @@ const Content = ({ activeFeature }) => (
       </CustomCarousel>
     </CarouselSection>
     {/* create review section */}
-    <CarouselSection
+    {/* <CarouselSection
       title={Data.reviews.sectionTitle}
       tag={Formatter.tagFromTitle(Data.reviews.sectionTitle)}
     >
@@ -196,11 +196,12 @@ const Content = ({ activeFeature }) => (
           />
         ))}
       </CustomCarousel>
-    </CarouselSection>
+    </CarouselSection> */}
     {/* create members section */}
     <Section
       title={Data.members.sectionTitle}
       tag={Formatter.tagFromTitle(Data.members.sectionTitle)}
+      style={{ background: "black" }}
     >
       {Data.members.data.map((members, i) => (
         <MemberPanel
@@ -214,7 +215,7 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.contactUs.sectionTitle}
       tag={Formatter.tagFromTitle(Data.contactUs.sectionTitle)}
-      background="black 100% 100%"
+      background="url('public/img/bg_grey.png') 100% 100%"
       padding="2rem"
       direction="column"
       marginBottom="0"

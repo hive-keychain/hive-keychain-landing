@@ -5,8 +5,6 @@ import TitleApp from "../components/labels/titleApp";
 import "../css/containers/header.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import * as Data from "../jsons/data.json";
-import * as SPPData from "../jsons/spp.json";
-import * as RankingsData from "../jsons/rankings.json";
 import * as Formatter from "../utils/formatter";
 import * as Const from "../utils/const";
 import { connect } from "react-redux";
@@ -117,8 +115,6 @@ class Header extends React.Component {
     this.isMainPage = this.page === "main";
     // Get data from Jsons
     this.navItems = Data.default;
-    this.sppNavItems = SPPData.default;
-    this.rankingsNavItems = RankingsData.default;
 
     // Set initial local state
     this.state = {
