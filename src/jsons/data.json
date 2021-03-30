@@ -1,37 +1,9 @@
 {
   "whySteemPlus": {
-    "sectionTitle": "Why SteemPlus ?",
+    "sectionTitle": "Why Keychain ?",
     "data": [
-      {
-        "title": "30+ Features",
-        "icon": "icon_features.svg",
-        "content": "<p>SteemPlus extension brings over 30 new features to your Steem experience</p><p>Available on Steemit and Busy</p><p>Many more features on our TODO list!</p>",
-        "link": {
-          "type": "anchor",
-          "to": "features",
-          "text": "Browse features"
-        }
-      },
-      {
-        "title": "SteemPlus Points",
-        "icon": "icon_points.svg",
-        "content": "<p>Use third-party <strong>Steem Apps</strong> and earn <strong>SteemPlus Points (SPP)</strong>.</p><p>SPP grant you a share of @steem-plus <strong>daily upvotes</strong></p><p>Redeem for <strong>premium features</strong></p>.",
-        "link": {
-          "type": "internal",
-          "to": "spp",
-          "text": "Learn more about SPP"
-        }
-      },
-      {
-        "title": "For the community",
-        "icon": "icon_community.svg",
-        "content": "<p>Opensource</p><p>Developement funded by upvotes from @utopian-io, @adsactly and the community</p><p>Over 3,500 daily users</p><p>Emphasis on developing features requested by the community</p>",
-        "link": {
-          "type": "external",
-          "to": "https://github.com/stoodkev/SteemPlus",
-          "text": "See the code on Github"
-        }
-      }
+      "Keychain for Hive provides you with secure and seamless access to HIVE powered websites, apps, and services.",
+      "Experience gaming, blogging, video streaming, DeFi, and more while preserving the safety of your funds. Available for both desktop browsers and mobile devices. It’s time to join Web 3.0."
     ]
   },
   "where": {

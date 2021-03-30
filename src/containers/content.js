@@ -49,16 +49,24 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.whySteemPlus.sectionTitle}
       tag={Formatter.tagFromTitle(Data.whySteemPlus.sectionTitle)}
+      background="transparent url('public/img/bg_grey.png') 0% 0% no-repeat padding-box"
     >
-      {Data.whySteemPlus.data.map((why, i) => (
-        <FancyCard
-          title={why.title}
-          content={Parser(why.content)}
-          link={why.link}
-          icon={why.icon}
-          key={i}
-        />
-      ))}
+      <div style={{ width: "50%", margin: 0 }}>
+        {Data.whySteemPlus.data.map((why, i) => (
+          <p
+            style={{
+              font: "normal normal normal 22px",
+              color: "white",
+              textAlign: "left",
+            }}
+          >
+            {why}
+          </p>
+        ))}
+      </div>
+      <div>
+        <img src="public/img/why_hive.svg" />
+      </div>
     </Section>
     {/* create feature section */}
     {/* <ImageSection
