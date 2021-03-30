@@ -3,9 +3,7 @@ import Header from "./header";
 import Footer from "./footer";
 import "../css/containers/App.css";
 import Content from "./content";
-import Ranking from "./ranking";
 import Banner from "../components/banner";
-import Spp from "./spp";
 
 import { connect } from "react-redux";
 
@@ -19,12 +17,7 @@ class App extends Component {
       case "main":
         content = <Content />;
         break;
-      case "spp":
-        content = <Spp />;
-        break;
-      case "rankings":
-        content = <Ranking />;
-        break;
+
       default:
         content = <Content />;
     }
@@ -40,12 +33,9 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  page: state.nav.page
+const mapStateToProps = (state) => ({
+  page: state.nav.page,
 });
-const mapDispatchToProps = dispatch => ({});
+const mapDispatchToProps = (dispatch) => ({});
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
