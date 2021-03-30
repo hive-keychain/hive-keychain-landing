@@ -24,23 +24,24 @@ const styleFeatureItem = {
   borderRadius: "33px",
   marginTop: "1.5rem",
   fontFamily: "Roboto, sans-serif",
-  color: "white"
+  color: "white",
 };
 
 const styleIconBrowser = {
   width: "3rem",
   height: "3rem",
-  marginBottom: "1rem"
+  marginBottom: "1rem",
 };
 
 const styleContactUsText = {
-  color: Const.COLOR_TEXT_CONTACT
+  color: "white",
+  fontSize: 18,
 };
 
 const styleIconPlatform = {
   marginLeft: "0.5rem",
   height: "1.5rem",
-  width: "1.5rem"
+  width: "1.5rem",
 };
 
 const Content = ({ activeFeature }) => (
@@ -223,7 +224,7 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.contactUs.sectionTitle}
       tag={Formatter.tagFromTitle(Data.contactUs.sectionTitle)}
-      background={Const.BACKGROUND_CONTACT_SECTION}
+      background="black 100% 100%"
       padding="2rem"
       direction="column"
       marginBottom="0"
@@ -231,28 +232,27 @@ const Content = ({ activeFeature }) => (
       <p style={styleContactUsText}>
         {Parser(Data.contactUs.data.description)}
       </p>
-      <CustomButton
-        text={Data.contactUs.data.textButton}
-        color1={Const.TITLE_COLOR}
-        color2="white"
-        href={Data.contactUs.data.url}
-      />
+      <p style={styleContactUsText}>Join our Discord!</p>
+      <a href="https://discord.gg/3EM6YfRrGv">
+        <img
+          alt="discord"
+          src="public/img/discord.png"
+          style={{ height: 100 }}
+        />
+      </a>
     </Section>
   </div>
 );
 
 // Setup redux
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    activeFeature: state.nav.activeFeature
+    activeFeature: state.nav.activeFeature,
   };
 };
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Content);
+export default connect(mapStateToProps, mapDispatchToProps)(Content);

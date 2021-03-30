@@ -10,22 +10,22 @@ const Section = ({
   background,
   direction,
   children,
-  marginBottom
+  marginBottom,
 }) => {
   // Here we defined inline styles inside the component because we want to use props as attributes
   const titleStyle = {
-    color: Const.TITLE_COLOR,
+    color: "white",
     textTransform: "uppercase",
     fontSize: "2rem",
     fontFamily: "Montserrat",
     fontWeight: "600",
     margin: "0px",
-    marginBottom: "3.5rem"
+    marginBottom: "3.5rem",
   };
   const style = {
     background: background,
     marginBottom: marginBottom || "3.5rem",
-    padding: "2.5rem"
+    padding: "2.5rem",
   };
 
   // Rendering component
