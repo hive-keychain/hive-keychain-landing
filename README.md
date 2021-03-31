@@ -1,2 +1,3 @@
-# SteemPlus-landing
-Landing Page for steemplus.app
+# Hive Keychain
+
+Landing Page for Hive Keychain extensions and Apps
