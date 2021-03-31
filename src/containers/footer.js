@@ -37,7 +37,7 @@ const Footer = () => (
     <div style={container}>
       <a href="https://hive.io" target="_blank">
         <img
-          src="public/img/footer/powered_hive.png"
+          src="img/footer/powered_hive.png"
           alt="Powered by Hive"
           style={{ height: 60 }}
         />
@@ -50,7 +50,7 @@ const Footer = () => (
       >
         <span>
           <img
-            src="public/img/footer/github.svg"
+            src="img/footer/github.svg"
             alt="Github"
             style={{ verticalAlign: "middle" }}
           />
@@ -60,7 +60,7 @@ const Footer = () => (
       <a href="https://peakd.com/@keychain" target="_blank">
         <span>
           <img
-            src="public/img/footer/see_on_hive.svg"
+            src="img/footer/see_on_hive.svg"
             alt="Hive"
             style={{ verticalAlign: "middle" }}
           />

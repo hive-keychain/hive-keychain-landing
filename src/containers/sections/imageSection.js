@@ -12,16 +12,16 @@ const ImageSection = ({ title, tag, src, children, justify }) => {
     fontFamily: "Montserrat",
     fontWeight: "600",
     margin: "0px",
-    marginBottom: "3.5rem"
+    marginBottom: "3.5rem",
   };
   const styleImage = {
-    backgroundImage: `url(public/img/${src})`,
+    backgroundImage: `url(img/${src})`,
     backgroundSize: "cover",
-    minHeight: "30rem"
+    minHeight: "30rem",
   };
 
   const style = {
-    marginBottom: "3.5rem"
+    marginBottom: "3.5rem",
   };
 
   return (

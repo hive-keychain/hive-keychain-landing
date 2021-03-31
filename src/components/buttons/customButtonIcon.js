@@ -14,9 +14,9 @@ const CustomButtonIcon = ({ text, color1, color2, marginTop, icon, href }) => {
       borderRadius: "30px",
       "&:hover": {
         backgroundColor: color2,
-        color: color1
-      }
-    }
+        color: color1,
+      },
+    },
   };
 
   const styleIcon = {
@@ -24,14 +24,14 @@ const CustomButtonIcon = ({ text, color1, color2, marginTop, icon, href }) => {
     width: "2rem",
     marginRight: "0.5rem",
     "&:hover": {
-      filter: "invert(.5) sepia(2) saturate(5) hue-rotate(175deg)"
-    }
+      filter: "invert(.5) sepia(2) saturate(5) hue-rotate(175deg)",
+    },
   };
 
   const CustomizedButton = withStyles(buttonStyle)(Button);
   return (
     <CustomizedButton variant="contained" href={href} target="_blank">
-      <img src={`public/img/${icon}`} alt="" style={styleIcon} />
+      <img src={`img/${icon}`} alt="" style={styleIcon} />
       <span>{text}</span>
     </CustomizedButton>
   );

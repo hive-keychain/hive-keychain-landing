@@ -4,7 +4,7 @@ import {
   CardContent,
   Grid,
   CardActions,
-  Toolbar
+  Toolbar,
 } from "@material-ui/core/";
 import TitleFancyCard from "../components/labels/titleFancyCard";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -20,14 +20,14 @@ const linkStyle = {
   cursor: "pointer",
   fontWeight: "500",
   "&:hover": {
-    textDecoration: "underline !important"
-  }
+    textDecoration: "underline !important",
+  },
 };
 
 const styleCardAction = {
   display: "inline-block",
   marginBottom: "2rem",
-  width: "100%"
+  width: "100%",
 };
 
 const styleContent = {
@@ -36,20 +36,20 @@ const styleContent = {
     color: "#21496C",
     fontSize: "1rem",
     textAlign: "left",
-    minHeight: "18rem"
-  }
+    minHeight: "18rem",
+  },
 };
 
 const styleIcon = {
   width: "2rem",
   height: "2rem",
-  marginRight: "0.5rem"
+  marginRight: "0.5rem",
 };
 
 const styleToolbar = {
   root: {
-    paddingLeft: "0px"
-  }
+    paddingLeft: "0px",
+  },
 };
 
 const style = {
@@ -59,7 +59,7 @@ const style = {
     boxShadow: "6px 6px 8px rgba(0, 0, 0, 0.28)",
     paddingLeft: "1rem",
     paddingRight: "1rem",
-  }
+  },
 };
 
 const CustomCard = withStyles(style)(Card);
@@ -113,13 +113,13 @@ const FancyCard = ({ title, content, icon, link, setPage }) => (
   <Grid item xs={12} sm={6} md={4} lg={3}>
     <CustomCard
       classes={{
-        root: `fancy-card card-${title}`
+        root: `fancy-card card-${title}`,
       }}
     >
       <CustomCardContent className="fancy-card-content">
         <TitleFancyCard>
           <CustomToolbar>
-            <img style={styleIcon} src={`../public/img/${icon}`} alt={icon} />
+            <img style={styleIcon} src={`../img/${icon}`} alt={icon} />
             <TitleFancyCard variant="title" color="primary">
               {title}
             </TitleFancyCard>
@@ -134,23 +134,20 @@ const FancyCard = ({ title, content, icon, link, setPage }) => (
   </Grid>
 );
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    page: state.nav.page
+    page: state.nav.page,
   };
 };
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    setPage: page => {
+    setPage: (page) => {
       dispatch({
         type: "SET_PAGE",
-        payload: page
+        payload: page,
       });
-    }
+    },
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FancyCard);
+export default connect(mapStateToProps, mapDispatchToProps)(FancyCard);

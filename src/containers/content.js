@@ -49,7 +49,7 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.whySteemPlus.sectionTitle}
       tag={Formatter.tagFromTitle(Data.whySteemPlus.sectionTitle)}
-      background="transparent url('public/img/bg_grey.png') 0% 0% no-repeat padding-box"
+      background="transparent url('img/bg_grey.png') 0% 0% no-repeat padding-box"
     >
       <div style={{ width: "50%", margin: 0 }}>
         {Data.whySteemPlus.data.map((why, i) => (
@@ -65,7 +65,7 @@ const Content = ({ activeFeature }) => (
         ))}
       </div>
       <div>
-        <img src="public/img/why_hive.svg" />
+        <img src="img/why_hive.svg" />
       </div>
     </Section>
     {/* create feature section */}
@@ -93,7 +93,7 @@ const Content = ({ activeFeature }) => (
               {feature.platforms.map((p, i) => (
                 <img
                   key={i}
-                  src={`public/img/platforms/${p}`}
+                  src={`img/platforms/${p}`}
                   alt={p}
                   style={styleIconPlatform}
                 />
@@ -143,7 +143,7 @@ const Content = ({ activeFeature }) => (
               <div>
                 <a href={browser.url} target="_blank">
                   <img
-                    src={`public/img/browsers/${browser.icon}.svg`}
+                    src={`img/browsers/${browser.icon}.svg`}
                     alt={browser.name}
                     style={styleIconBrowser}
                   />
@@ -174,28 +174,28 @@ const Content = ({ activeFeature }) => (
     >
       <CustomCarousel autoPlay={true} nbElem={3} sizeElement={12}>
         <div>
-          <img height={600} src="public/img/screenshots/1.png" alt="Intro" />
+          <img height={600} src="img/screenshots/1.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/2.png" alt="Intro" />
+          <img height={600} src="img/screenshots/2.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/3.png" alt="Intro" />
+          <img height={600} src="img/screenshots/3.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/4.png" alt="Intro" />
+          <img height={600} src="img/screenshots/4.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/5.png" alt="Intro" />
+          <img height={600} src="img/screenshots/5.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/6.png" alt="Intro" />
+          <img height={600} src="img/screenshots/6.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/7.png" alt="Intro" />
+          <img height={600} src="img/screenshots/7.png" alt="Intro" />
         </div>
         <div>
-          <img height={600} src="public/img/screenshots/8.png" alt="Intro" />
+          <img height={600} src="img/screenshots/8.png" alt="Intro" />
         </div>
       </CustomCarousel>
     </CarouselSection>
@@ -237,7 +237,7 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.contactUs.sectionTitle}
       tag={Formatter.tagFromTitle(Data.contactUs.sectionTitle)}
-      background="url('public/img/bg_grey.png') 100% 100%"
+      background="url('img/bg_grey.png') 100% 100%"
       padding="2rem"
       direction="column"
       marginBottom="0"
@@ -249,8 +249,8 @@ const Content = ({ activeFeature }) => (
       <a href="https://discord.gg/3EM6YfRrGv">
         <img
           alt="discord"
-          src="public/img/discord.png"
-          style={{ height: 100 }}
+          src="img/discord.png"
+          style={{ height: 100, cursor: "pointer" }}
         />
       </a>
     </Section>

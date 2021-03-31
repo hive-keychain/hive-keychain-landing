@@ -5,7 +5,7 @@ const styles = {
   banner: {
     width: "100%",
     height: 400,
-    background: "url(public/img/banner.png) 100% 100%",
+    background: "url(img/banner.png) 100% 100%",
   },
   title: {
     position: "relative",
@@ -19,12 +19,7 @@ const styles = {
 const Banner = () => (
   <div style={styles.container}>
     <div id="banner" style={styles.banner}>
-      <img
-        id="title"
-        style={styles.title}
-        src="public/img/title.svg"
-        alt="Keychain"
-      />
+      <img id="title" style={styles.title} src="img/title.svg" alt="Keychain" />
     </div>
   </div>
 );

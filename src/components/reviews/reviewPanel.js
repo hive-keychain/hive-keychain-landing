@@ -4,28 +4,28 @@ import {
   Card,
   CardContent,
   Toolbar,
-  CardActions
+  CardActions,
 } from "@material-ui/core/";
 import ImageReview from "./imageReview";
 import { withStyles } from "@material-ui/core/styles";
 
 const reviewStyle = {
-  fontSize: "1rem"
+  fontSize: "1rem",
 };
 
 const usernameStyle = {
   fontSize: "1rem",
   fontWeight: "600",
   color: "#3c4a97",
-  textDecoration: "none"
+  textDecoration: "none",
 };
 
 const styleToobar = {
   root: {
     justifyContent: "center",
     paddingLeft: "0px",
-    paddingRight: "0px"
-  }
+    paddingRight: "0px",
+  },
 };
 
 const style = {
@@ -35,8 +35,8 @@ const style = {
     marginBottom: "1rem",
     borderRadius: "33px",
     backgroundImage: "linear-gradient(137deg, #ddefff, #ffffff)",
-    boxShadow: "6px 6px 8px rgba(0, 0, 0, 0.28)"
-  }
+    boxShadow: "6px 6px 8px rgba(0, 0, 0, 0.28)",
+  },
 };
 
 const styleContent = {
@@ -47,14 +47,14 @@ const styleContent = {
     textAlign: "left",
     minHeight: "17rem",
     fontFamily: "Roboto",
-    fontStyle: "italic"
-  }
+    fontStyle: "italic",
+  },
 };
 
 const styleIcon = {
   width: "4rem",
   height: "4rem",
-  marginBottom: "2rem"
+  marginBottom: "2rem",
 };
 
 const CustomCard = withStyles(style)(Card);
@@ -80,11 +80,7 @@ const ReviewPanel = ({ username, review }) => (
     <CustomCard>
       <CustomCardContent className="fancy-card-content">
         <CustomToolbar>
-          <img
-            style={styleIcon}
-            src={`../public/img/review_quote.svg`}
-            alt=""
-          />
+          <img style={styleIcon} src={`../img/review_quote.svg`} alt="" />
         </CustomToolbar>
         <span style={reviewStyle}>{review}</span>
       </CustomCardContent>
