@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core/";
 import "../../css/containers/section.css";
-import * as Const from "../../utils/const";
 
 // Create section
 const Section = ({

@@ -1,7 +1,7 @@
 import React from "react";
-import { Grid, Textfield } from "@material-ui/core/";
+import { Grid } from "@material-ui/core/";
 
-const createForm = inputs => {
+const createForm = (inputs) => {
   return inputs.map();
 };
 

@@ -1,6 +1,4 @@
-import { StylesProvider } from "@material-ui/styles";
 import React from "react";
-import * as Const from "../utils/const";
 
 // Inline footer style
 const style = {
@@ -12,7 +10,7 @@ const style = {
   display: "flex",
   alignItems: "center",
 };
-const { innerWidth: width, innerHeight: height } = window;
+const { innerWidth: width } = window;
 
 // Inline text style
 const styleText = {
@@ -23,23 +21,23 @@ const styleText = {
   display: width >= 800 ? "inline" : "none",
 };
 
-const container = { width: width <= 1100 ? "30%" : "50%" };
+const container = {};
 
 const rightContainer = {
-  minWidth: width <= 1100 ? "70%" : "50%",
+  width: "100%",
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "flex-end",
 };
 
 // Create footer
 const Footer = () => (
   <div className="footer" style={style}>
     <div style={container}>
-      <a href="https://hive.io" target="_blank">
+      <a href="https://hive.io" target="_blank" rel="noreferrer">
         <img
           src="img/footer/powered_hive.png"
           alt="Powered by Hive"
-          style={{ height: 60 }}
+          style={{ height: width > 600 ? 60 : 40 }}
         />
       </a>
     </div>
@@ -47,8 +45,9 @@ const Footer = () => (
       <a
         href="https://github.com/stoodkev/hive-keychain-mobile"
         target="_blank"
+        rel="noreferrer"
       >
-        <span>
+        <span style={{ marginRight: "10vw" }}>
           <img
             src="img/footer/github.svg"
             alt="Github"
@@ -57,7 +56,7 @@ const Footer = () => (
           <span style={styleText}>Visit our Github</span>
         </span>
       </a>
-      <a href="https://peakd.com/@keychain" target="_blank">
+      <a href="https://peakd.com/@keychain" target="_blank" rel="noreferrer">
         <span>
           <img
             src="img/footer/see_on_hive.svg"

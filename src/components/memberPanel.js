@@ -1,20 +1,18 @@
 import React from "react";
 import { Grid } from "@material-ui/core/";
-import * as Const from "../utils/const";
 import Parser from "html-react-parser";
 
-const style = {};
-
+const width = window.innerWidth;
 // Inline style for avatar
 const imgStyle = {
-  maxHeight: "15rem",
+  maxHeight: width > 600 ? "15rem" : "8rem",
   borderRadius: "0 10px 10px 10px",
   marginBottom: "1rem",
 };
 
 // Inline style for name label
 const nameStyle = {
-  fontSize: "1.25rem",
+  fontSize: width > 600 ? "1.25rem" : "1rem",
   fontWeight: "600",
   color: "lightgrey",
   textDecoration: "none",
@@ -24,7 +22,7 @@ const nameStyle = {
 
 // Inline style for username label
 const usernameStyle = {
-  fontSize: "1.25rem",
+  fontSize: width > 600 ? "1.25rem" : "1rem",
   fontWeight: "600",
   color: "white",
   textDecoration: "none",
@@ -32,18 +30,18 @@ const usernameStyle = {
 
 // Inline style for position label
 const positionStyle = {
-  fontSize: "1rem",
+  fontSize: width > 600 ? "1rem" : "0.75rem",
   fontWeight: "300",
   color: "lightgrey",
+  marginBottom: width > 600 ? 0 : 20,
 };
 
 // Create member panel. This component is used to describe members of SteemPlus team
 const MemberPanel = ({ name, position, username }) => (
   <Grid
-    style={style}
     className="memberPanel"
     item
-    xs={12}
+    xs={6}
     sm={6}
     md={3}
     lg={3}

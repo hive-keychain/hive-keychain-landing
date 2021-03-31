@@ -1,46 +1,35 @@
 import React from "react";
 import Section from "./sections/section";
-import ImageSection from "./sections/imageSection";
 import CarouselSection from "./sections/carouselSection";
-import FancyCard from "../components/fancyCard";
 import MemberPanel from "../components/memberPanel";
-import ReviewPanel from "../components/reviews/reviewPanel";
-import ContentDescription from "../components/labels/contentDescription";
-import CustomButton from "../components/buttons/customButton";
 import { Grid } from "@material-ui/core";
 import CustomCarousel from "../components/carousel/customCarousel";
 import * as Data from "../jsons/data.json";
 import * as Formatter from "../utils/formatter";
-import * as Arrays from "../utils/arrays";
-import * as Const from "../utils/const";
 import Parser from "html-react-parser";
 import { connect } from "react-redux";
 
-const styleFeatureItem = {
-  backgroundColor: "rgba(33, 73, 108, 0.8)",
-  background: Const.BACKGROUND_FEATURE_COLOR_OPACITY,
-  zIndex: 1,
-  padding: "1.5rem",
-  borderRadius: "33px",
-  marginTop: "1.5rem",
-  fontFamily: "Roboto, sans-serif",
-  color: "white",
-};
+// const styleFeatureItem = {
+//   backgroundColor: "rgba(33, 73, 108, 0.8)",
+//   background: Const.BACKGROUND_FEATURE_COLOR_OPACITY,
+//   zIndex: 1,
+//   padding: "1.5rem",
+//   borderRadius: "33px",
+//   marginTop: "1.5rem",
+//   fontFamily: "Roboto, sans-serif",
+//   color: "white",
+// };
+
+const width = window.innerWidth;
 
 const styleIconBrowser = {
-  height: "70px",
-  marginBottom: "1rem",
+  height: width > 600 ? "70px" : "50px",
+  marginBottom: width > 600 ? "1rem" : "0.2rem",
 };
 
 const styleContactUsText = {
   color: "white",
   fontSize: 18,
-};
-
-const styleIconPlatform = {
-  marginLeft: "0.5rem",
-  height: "1.5rem",
-  width: "1.5rem",
 };
 
 const Content = ({ activeFeature }) => (
@@ -49,9 +38,9 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.whySteemPlus.sectionTitle}
       tag={Formatter.tagFromTitle(Data.whySteemPlus.sectionTitle)}
-      background="transparent url('img/bg_grey.png') 0% 0% no-repeat padding-box"
+      background="transparent url('img/bg_grey.png') 50% 50%"
     >
-      <div style={{ width: "50%", margin: 0 }}>
+      <div style={{ width: width > 600 ? "50%" : "100%", margin: 0 }}>
         {Data.whySteemPlus.data.map((why, i) => (
           <p
             style={{
@@ -65,7 +54,7 @@ const Content = ({ activeFeature }) => (
         ))}
       </div>
       <div>
-        <img src="img/why_hive.svg" />
+        <img src="img/why_hive.svg" alt="hive" />
       </div>
     </Section>
     {/* create feature section */}
@@ -126,11 +115,11 @@ const Content = ({ activeFeature }) => (
         {Data.where.browsers.map((browser, i) => (
           <Grid
             item
-            xs={12}
+            xs={6}
             sm={4}
             md={4}
             lg={2}
-            style={{ margin: "50px 0px" }}
+            style={{ margin: width > 600 ? "50px 0px" : "0" }}
             key={i}
           >
             <Grid
@@ -141,7 +130,7 @@ const Content = ({ activeFeature }) => (
               className="browser-item"
             >
               <div>
-                <a href={browser.url} target="_blank">
+                <a href={browser.url} target="_blank" rel="noreferrer">
                   <img
                     src={`img/browsers/${browser.icon}.svg`}
                     alt={browser.name}
@@ -174,28 +163,60 @@ const Content = ({ activeFeature }) => (
     >
       <CustomCarousel autoPlay={true} nbElem={3} sizeElement={12}>
         <div>
-          <img height={600} src="img/screenshots/1.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/1.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/2.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/2.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/3.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/3.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/4.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/4.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/5.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/5.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/6.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/6.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/7.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/7.png"
+            alt="Intro"
+          />
         </div>
         <div>
-          <img height={600} src="img/screenshots/8.png" alt="Intro" />
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/8.png"
+            alt="Intro"
+          />
         </div>
       </CustomCarousel>
     </CarouselSection>
@@ -237,7 +258,7 @@ const Content = ({ activeFeature }) => (
     <Section
       title={Data.contactUs.sectionTitle}
       tag={Formatter.tagFromTitle(Data.contactUs.sectionTitle)}
-      background="url('img/bg_grey.png') 100% 100%"
+      background="transparent url('img/bg_grey.png') 50% 50%"
       padding="2rem"
       direction="column"
       marginBottom="0"

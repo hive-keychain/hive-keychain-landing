@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import * as Const from "../../utils/const";
 
 const styled = {
   padding: "50px 0",

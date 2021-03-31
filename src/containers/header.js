@@ -1,17 +1,17 @@
 import React from "react";
-import { Toolbar, Avatar, Grid } from "@material-ui/core/";
+import { Grid } from "@material-ui/core/";
 import NavbarButton from "../components/buttons/navbarButton";
-import TitleApp from "../components/labels/titleApp";
 import "../css/containers/header.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import * as Data from "../jsons/data.json";
 import * as Formatter from "../utils/formatter";
-import * as Const from "../utils/const";
 import { connect } from "react-redux";
 import ResponsiveMenu from "react-responsive-navbar";
 import { Dehaze } from "@material-ui/icons";
 
 // Inline style for anchors
+
+const width = window.innerWidth;
 const anchorStyle = {
   textDecoration: "none",
   textTransform: "uppercase",
@@ -29,8 +29,8 @@ const styleNavBar = {
   color: "white",
   position: "relative",
   width: "100%",
-  paddingTop: "0.25rem",
-  paddingBottom: "0.25rem",
+  paddingTop: width > 600 ? "0.25rem" : "0.1rem",
+  paddingBottom: width > 600 ? "0.25rem" : "0.1rem",
 };
 
 // Inline style for sticky navbar
@@ -40,8 +40,8 @@ const styleNavBarSticky = {
   top: 0,
   background: "black",
   width: "100%",
-  paddingTop: "0.25rem",
-  paddingBottom: "0.25rem",
+  paddingTop: width > 600 ? "0.25rem" : "0.1rem",
+  paddingBottom: width > 600 ? "0.25rem" : "0.1rem",
   boxShadow:
     "0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12)",
 };
@@ -63,8 +63,8 @@ const getHomeSubMenu = (navItems, activePage, setSubMenu, activeSubElement) => {
       <Grid
         style={{
           paddingLeft: 50,
-          paddingTop: 15,
-          paddingBottom: 15,
+          paddingTop: width > 600 ? 15 : 1,
+          paddingBottom: width > 600 ? 15 : 1,
           fontWeight: "bold",
         }}
         item

@@ -11,6 +11,14 @@
     "description": "SteemPlus is available natively on Chrome and Firefox. It’s also available on Opera via the `Install Chrome Extensions` plugin. <br />What are you waiting for? You are only minutes away from getting more out of your Steem experience!",
     "browsers": [
       {
+        "icon": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.mobilekeychain"
+      },
+      {
+        "icon": "ios",
+        "url": "https://apps.apple.com/us/app/hive-keychain/id1552190010"
+      },
+      {
         "name": "Chrome",
         "icon": "chrome",
         "url": "https://chrome.google.com/webstore/detail/hive-keychain/jcacnejopjdphbnjgfaaobbfafkihpep?hl=en"
@@ -24,14 +32,6 @@
         "name": "Brave",
         "icon": "brave",
         "url": "https://chrome.google.com/webstore/detail/hive-keychain/jcacnejopjdphbnjgfaaobbfafkihpep?hl=en"
-      },
-      {
-        "icon": "android",
-        "url": "https://play.google.com/store/apps/details?id=com.mobilekeychain"
-      },
-      {
-        "icon": "ios",
-        "url": "https://apps.apple.com/us/app/hive-keychain/id1552190010"
       }
     ]
   },
