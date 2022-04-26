@@ -49,7 +49,7 @@ const Footer = () => (
       </div>
       <div style={rightContainer}>
         <a
-          href="https://github.com/stoodkev/hive-keychain-mobile"
+          href="https://github.com/hive-keychain"
           target="_blank"
           style={{ textDecoration: "none" }}
           rel="noreferrer"
@@ -85,7 +85,7 @@ const Footer = () => (
         paddingBottom: 5,
       }}
     >
-      ©2021 Hive Keychain Ltd
+      ©2022 Hive Keychain Ltd
     </div>
   </div>
 );

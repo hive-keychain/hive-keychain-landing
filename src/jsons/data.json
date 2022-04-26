@@ -2,8 +2,8 @@
   "whySteemPlus": {
     "sectionTitle": "Why Keychain ?",
     "data": [
-      "Keychain for Hive provides you with secure and seamless access to HIVE powered websites, apps, and services.",
-      "Experience gaming, blogging, video streaming, DeFi, and more while preserving the safety of your funds. Available for both desktop browsers and mobile devices. It’s time to join Web 3.0."
+      "Hive Keychain provides you with secure and seamless access to Hive powered websites, dApps, and services.",
+      "Like our 100,000+ users, experience gaming, blogging, video streaming, DeFi, and more while preserving the safety of your funds. Available for both desktop browsers and mobile devices. It’s time to join Web 3.0."
     ]
   },
   "where": {
@@ -46,6 +46,11 @@
         "name": "Quentin",
         "position": "CEO / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=stoodkev&approve=1'><b>Witness</b></a>",
         "username": "stoodkev"
+      },
+      {
+        "name": "Cédric",
+        "position": "Full-stack Dev",
+        "username": "cedricguillas"
       },
       {
         "name": "Nate",

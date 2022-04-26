@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
+  "homepage": ".",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "gh-pages": "^3.1.0",
     "html-react-parser": "^1.2.4",
     "react": "^16.5.2",
     "react-alice-carousel": "^1.12.0",
@@ -25,7 +27,9 @@
   "scripts": {
     "build": "react-scripts build",
     "start": "serve -s build",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

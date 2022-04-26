@@ -1,6 +1,6 @@
-import React from "react";
 import { Grid } from "@material-ui/core/";
 import Parser from "html-react-parser";
+import React from "react";
 
 const width = window.innerWidth;
 // Inline style for avatar
@@ -43,8 +43,8 @@ const MemberPanel = ({ name, position, username }) => (
     item
     xs={6}
     sm={6}
-    md={3}
-    lg={3}
+    md={2}
+    lg={2}
     container
     direction="column"
     justify="space-evenly"
@@ -53,7 +53,7 @@ const MemberPanel = ({ name, position, username }) => (
     <img
       style={imgStyle}
       className="imgMember"
-      src={`img/teamMembers/${username}.png`}
+      src={`https://images.hive.blog/u/${username}/avatar`}
       alt={name}
     />
 
