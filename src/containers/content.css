@@ -1,0 +1,12 @@
+.browsers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.browsers-container .browser {
+    flex: 0 0 calc(16.66% - 20px);
+    padding: 20px;
+    margin: 10px;
+    min-width: 250px;
+}

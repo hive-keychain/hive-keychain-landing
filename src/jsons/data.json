@@ -9,6 +9,7 @@
   "where": {
     "sectionTitle": "Download",
     "description": "SteemPlus is available natively on Chrome and Firefox. It’s also available on Opera via the `Install Chrome Extensions` plugin. <br />What are you waiting for? You are only minutes away from getting more out of your Steem experience!",
+    
     "browsers": [
       {
         "icon": "android",
@@ -51,6 +52,11 @@
         "name": "Cédric",
         "position": "Full-stack Dev",
         "username": "cedricguillas"
+      },
+      {
+        "name": "Saturno",
+        "position": "Front-end Dev",
+        "username": "theghost1980"
       },
       {
         "name": "Nate",
