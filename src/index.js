@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/index.css";
-import App from "./containers/App";
-import * as serviceWorker from "./serviceWorker";
-import WebFont from "webfontloader";
 import { Provider } from "react-redux";
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { BrowserRouter } from "react-router-dom";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import logger from "redux-logger";
+import WebFont from "webfontloader";
+import App from "./containers/App";
+import "./css/index.css";
+import * as serviceWorker from "./serviceWorker";
 
 // Font loader
 WebFont.load({
   google: {
-    families: ["Roboto:300", "Montserrat"]
-  }
+    families: ["Roboto:300", "Montserrat"],
+  },
 });
 
 // Create reducer for redux
@@ -20,7 +21,7 @@ const navReducer = (
   state = {
     page: "main",
     activeFeature: 0,
-    subMenu: "why-steemplus-?"
+    subMenu: "why-steemplus-?",
   },
   action
 ) => {
@@ -28,19 +29,19 @@ const navReducer = (
     case "SET_PAGE":
       state = {
         ...state,
-        page: action.payload
+        page: action.payload,
       };
       break;
     case "SET_ACTIVE_FEATURE":
       state = {
         ...state,
-        activeFeature: action.payload
+        activeFeature: action.payload,
       };
       break;
     case "SET_SUB_MENU":
       state = {
         ...state,
-        subMenu: action.payload
+        subMenu: action.payload,
       };
       break;
     default:
@@ -59,7 +60,9 @@ const store = createStore(
 // Render App
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

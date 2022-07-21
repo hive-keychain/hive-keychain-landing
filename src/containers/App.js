@@ -1,32 +1,30 @@
 import React, { Component } from "react";
-import Header from "./header";
-import Footer from "./footer";
+import ReactMarkdown from "react-markdown";
+import { connect } from "react-redux";
+import { Route, Routes } from "react-router-dom";
+import Banner from "../components/banner";
 import "../css/containers/App.css";
 import Content from "./content";
-import Banner from "../components/banner";
-
-import { connect } from "react-redux";
-
+import Footer from "./footer";
+import Header from "./header";
+import Terms from "./sections/terms";
 // Create app component
 class App extends Component {
   // Render component
   render() {
-    // Content depend on page
-    let content = null;
-    switch (this.props.page) {
-      case "main":
-        content = <Content />;
-        break;
-
-      default:
-        content = <Content />;
-    }
     // Display app
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{ display: "flex", flex: 1, flexDirection: "column" }}
+      >
         <Banner />
         <Header />
-        {content}
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="terms" element={<Terms />} />
+          <Route path="privacy" element={<ReactMarkdown />} />
+        </Routes>
         <Footer />
       </div>
     );
