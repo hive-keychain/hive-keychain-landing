@@ -68,10 +68,22 @@ const Footer = () => (
             color: "white",
             textTransform: "uppercase",
             cursor: "pointer",
+            marginBottom: 10,
           }}
           to="/privacy"
         >
           Privacy
+        </Link>
+        <Link
+          style={{
+            textDecoration: "none",
+            color: "white",
+            textTransform: "uppercase",
+            cursor: "pointer",
+          }}
+          to="/fees"
+        >
+          Fees
         </Link>
       </div>
       <div style={rightContainer}>

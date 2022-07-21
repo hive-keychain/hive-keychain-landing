@@ -16,3 +16,19 @@ code {
 .browser-item {
   margin-top: 1rem;
 }
+
+.markdown {
+  text-align: justify;
+  margin:  100px auto;
+  width: 60%;
+}
+
+.markdown h1, .markdown h2 {
+ text-align: center;
+}
+.markdown p {
+  font-size: large;
+}
+.markdown a {
+  color: inherit;font-weight: bold;cursor: pointer; text-align: justify;
+}

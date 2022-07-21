@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactMarkdown from "react-markdown";
 import { connect } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import Banner from "../components/banner";
@@ -7,6 +6,8 @@ import "../css/containers/App.css";
 import Content from "./content";
 import Footer from "./footer";
 import Header from "./header";
+import Fees from "./sections/fees";
+import Privacy from "./sections/privacy";
 import Terms from "./sections/terms";
 // Create app component
 class App extends Component {
@@ -21,9 +22,10 @@ class App extends Component {
         <Banner />
         <Header />
         <Routes>
-          <Route path="/" element={<Content />} />
           <Route path="terms" element={<Terms />} />
-          <Route path="privacy" element={<ReactMarkdown />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="fees" element={<Fees />} />
+          <Route path="/" element={<Content />} />
         </Routes>
         <Footer />
       </div>
