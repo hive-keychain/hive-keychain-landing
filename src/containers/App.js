@@ -14,18 +14,27 @@ class App extends Component {
   // Render component
   render() {
     // Display app
+    console.log(this.props);
+
     return (
       <div
         className="App"
         style={{ display: "flex", flex: 1, flexDirection: "column" }}
       >
         <Banner />
-        <Header />
         <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Content />
+              </>
+            }
+          />
           <Route path="terms" element={<Terms />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="fees" element={<Fees />} />
-          <Route path="/" element={<Content />} />
         </Routes>
         <Footer />
       </div>
