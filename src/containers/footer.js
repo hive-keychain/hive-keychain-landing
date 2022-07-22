@@ -60,7 +60,7 @@ const Footer = () => (
           }}
           to="/terms"
         >
-          ToS
+          Terms of service
         </Link>
         <Link
           style={{
