@@ -169,8 +169,7 @@ You understand that Hive Keychain is not registered or licensed by the CFTC, SEC
 
 You expressly agree that you assume all risks in connection with your access and use of the Site and Services and your interaction therewith. You further expressly waive and release the Hive Keychain Parties from any and all liability, claims, causes of action, or damages arising from or in any way relating to your use of the Site and Services and your interaction therewith. If you are a California resident, you waive the benefits and protections of California Civil Code § 1542, which provides: "[a] general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party."
 
-<!--
-### Dispute Resolution
+<!-- ### Dispute Resolution
 
 #### Governing Law
 
@@ -216,8 +215,7 @@ Any notices or other communications provided by us under these Terms, including 
 
 Our failure to enforce any right or provision of these Terms will not be considered a waiver of such right or provision. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of Hive Keychain. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise.
 
-These Terms are written in English (U.S.). Any translated version is provided solely for your convenience. To the extent any translated version of our Terms conflicts with the English version, the English version controls.
-!-->
+These Terms are written in English (U.S.). Any translated version is provided solely for your convenience. To the extent any translated version of our Terms conflicts with the English version, the English version controls. -->
 
 ### 16. Contact Information
 
