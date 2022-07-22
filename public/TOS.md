@@ -16,7 +16,7 @@ These Terms of Service (these "Terms" or this "Agreement") (i) contain the terms
 
 ### 1. Privacy Policy
 
-Please read these Terms carefully before using the Site or Services. By accessing the Site, or using our Services and/or Content (defined below) in any manner, you (i) accept and agree to these Terms and (ii) consent to the collection, use, disclosure and other handling of information as described in our Privacy Policy, available [here](/privacy) (the "Privacy Policy"). The Privacy Policy is incorporated herein by this reference in its entirety, and all references herein to the "Terms of Service", the "Terms" or this "Agreement", include a reference to the Privacy Policy.
+Please read these Terms carefully before using the Site or Services. By accessing the Site, or using our Services and/or Content (defined below) in any manner, you (i) accept and agree to these Terms and (ii) consent to the collection, use, disclosure and other handling of information as described in our Privacy Policy, available [here](#/privacy) (the "Privacy Policy"). The Privacy Policy is incorporated herein by this reference in its entirety, and all references herein to the "Terms of Service", the "Terms" or this "Agreement", include a reference to the Privacy Policy.
 
 ### 2. Terms or Services
 
@@ -78,7 +78,7 @@ You agree not to use the Site or Services in any other fashion than permitted by
 
 ### 7. Fees
 
-We may charge fees for some or part of the Services provided to you, including fees charged on token swaps that you execute on third-party exchanges. We reserve the right to change those fees at any time, in our sole and absolute discretion. We will disclose the amount of fees we will charge you for the applicable Service at the time that you access the Service. You may view the fees currently charged for our Services [here](https://hive-keychain.com/fees).
+We may charge fees for some or part of the Services provided to you, including fees charged on token swaps that you execute on third-party exchanges. We reserve the right to change those fees at any time, in our sole and absolute discretion. We will disclose the amount of fees we will charge you for the applicable Service at the time that you access the Service. You may view the fees currently charged for our Services [here](#/fees).
 
 You may incur charges from third parties for use of Third-Party Services. For example, you may be charged fees via the dApps (including but not limited to, decentralized exchanges, swap providers) that you may access via the Services. Third party fees are not charged by nor paid to Hive Keychain. Under no circumstances shall Hive Keychain incur any liability, of any kind, to you arising from or relating to fees charged to you by Third-Party Services linked to or accessed through our Site or Services.
 
