@@ -8,6 +8,7 @@ import * as Data from "../jsons/data.json";
 import * as Formatter from "../utils/formatter";
 import Parser from "html-react-parser";
 import { connect } from "react-redux";
+import './content.css';
 
 // const styleFeatureItem = {
 //   backgroundColor: "rgba(33, 73, 108, 0.8)",
@@ -111,15 +112,10 @@ const Content = ({ activeFeature }) => (
       tag={Formatter.tagFromTitle(Data.where.sectionTitle)}
       background="black"
     >
-      <Grid container direction="row" justify="center" alignItems="center">
+      <div className="browsers-container">
         {Data.where.browsers.map((browser, i) => (
-          <Grid
-            item
-            xs={6}
-            sm={4}
-            md={4}
-            lg={2}
-            style={{ margin: width > 600 ? "50px 0px" : "0" }}
+          <div
+           className="browser"
             key={i}
           >
             <Grid
@@ -151,9 +147,9 @@ const Content = ({ activeFeature }) => (
                 )}
               </div>
             </Grid>
-          </Grid>
+          </div>
         ))}
-      </Grid>
+      </div>
     </Section>
     {/* create screenshots section */}
     <CarouselSection
