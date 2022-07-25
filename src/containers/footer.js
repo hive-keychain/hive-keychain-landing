@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Inline footer style
 const style = {
@@ -9,6 +10,8 @@ const style = {
   paddingRight: "10%",
   display: "flex",
   alignItems: "center",
+  justifyContent: "space-between",
+  flexDirection: "row",
 };
 const { innerWidth: width } = window;
 
@@ -24,7 +27,6 @@ const styleText = {
 const container = {};
 
 const rightContainer = {
-  width: "100%",
   display: "flex",
   justifyContent: "flex-end",
 };
@@ -46,6 +48,43 @@ const Footer = () => (
             style={{ height: width > 600 ? 60 : 40 }}
           />
         </a>
+      </div>
+      <div style={{ flexDirection: "column", display: "flex" }}>
+        <Link
+          style={{
+            textDecoration: "none",
+            color: "white",
+            marginBottom: 10,
+            textTransform: "uppercase",
+            cursor: "pointer",
+          }}
+          to="/terms"
+        >
+          Terms of service
+        </Link>
+        <Link
+          style={{
+            textDecoration: "none",
+            color: "white",
+            textTransform: "uppercase",
+            cursor: "pointer",
+            marginBottom: 10,
+          }}
+          to="/privacy"
+        >
+          Privacy
+        </Link>
+        <Link
+          style={{
+            textDecoration: "none",
+            color: "white",
+            textTransform: "uppercase",
+            cursor: "pointer",
+          }}
+          to="/fees"
+        >
+          Fees
+        </Link>
       </div>
       <div style={rightContainer}>
         <a

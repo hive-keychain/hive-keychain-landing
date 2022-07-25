@@ -16,3 +16,22 @@ code {
 .browser-item {
   margin-top: 1rem;
 }
+
+.markdown {
+  text-align: justify;
+  margin:  100px auto;
+  width: 60%;
+}
+
+.markdown h1, .markdown h2 {
+ text-align: center;
+}
+.markdown h2:last-of-type{
+  margin-bottom:50px;
+}
+.markdown p, .markdown h4, .markdown h5 {
+  font-size: larger;
+}
+.markdown a {
+  color: inherit;font-weight: bold;cursor: pointer; text-align: justify;
+}
