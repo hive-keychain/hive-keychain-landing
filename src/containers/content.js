@@ -1,14 +1,14 @@
-import React from "react";
-import Section from "./sections/section";
-import CarouselSection from "./sections/carouselSection";
-import MemberPanel from "../components/memberPanel";
 import { Grid } from "@material-ui/core";
+import Parser from "html-react-parser";
+import React from "react";
+import { connect } from "react-redux";
 import CustomCarousel from "../components/carousel/customCarousel";
+import MemberPanel from "../components/memberPanel";
 import * as Data from "../jsons/data.json";
 import * as Formatter from "../utils/formatter";
-import Parser from "html-react-parser";
-import { connect } from "react-redux";
-import './content.css';
+import "./content.css";
+import CarouselSection from "./sections/carouselSection";
+import Section from "./sections/section";
 
 // const styleFeatureItem = {
 //   backgroundColor: "rgba(33, 73, 108, 0.8)",
@@ -114,10 +114,7 @@ const Content = ({ activeFeature }) => (
     >
       <div className="browsers-container">
         {Data.where.browsers.map((browser, i) => (
-          <div
-           className="browser"
-            key={i}
-          >
+          <div className="browser" key={i}>
             <Grid
               container
               direction="column"
@@ -270,6 +267,15 @@ const Content = ({ activeFeature }) => (
           style={{ height: 100, cursor: "pointer" }}
         />
       </a>
+      <p style={styleContactUsText}>
+        Or contact us at{" "}
+        <a
+          style={{ color: "white", fontWeight: "bold" }}
+          href="mailto:contact@hive-keychain.com"
+        >
+          contact@hive-keychain.com
+        </a>
+      </p>
     </Section>
   </div>
 );

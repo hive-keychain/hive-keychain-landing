@@ -81,7 +81,8 @@
       "description": "You need more information, or perhaps want to share your suggestions or get some assistance ?",
       "textButton": "Discord",
       "url": "https://discord.gg/hhBw3mv",
-      "icon": "discord.svg"
+      "icon": "discord.svg",
+      "email": "Or contact us at <a href='mailto:contact@hive-keychain.com'>contact@hive-keychain.com</a>"
     }
   }
 }
