@@ -9,7 +9,7 @@
   "where": {
     "sectionTitle": "Download",
     "description": "SteemPlus is available natively on Chrome and Firefox. It’s also available on Opera via the `Install Chrome Extensions` plugin. <br />What are you waiting for? You are only minutes away from getting more out of your Steem experience!",
-    
+
     "browsers": [
       {
         "icon": "android",
@@ -50,7 +50,7 @@
       },
       {
         "name": "Cédric",
-        "position": "Full-stack Dev",
+        "position": "CTO / Full-stack Dev",
         "username": "cedricguillas"
       },
       {
@@ -64,14 +64,14 @@
         "username": "nateaguila"
       },
       {
+        "name": "Manu",
+        "position": "Community Manager",
+        "username": "manuphotos"
+      },
+      {
         "name": "Matt",
         "position": "Advisor / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=yabapmatt&approve=1'><b>Witness</b></a>",
         "username": "yabapmatt"
-      },
-      {
-        "name": "Jesse",
-        "position": "Advisor / <a target='_blank' style='text-decoration: none; color: white;' href='https://hivesigner.com/sign/account-witness-vote?witness=aggroed&approve=1'><b>Witness</b></a>",
-        "username": "aggroed"
       }
     ]
   },

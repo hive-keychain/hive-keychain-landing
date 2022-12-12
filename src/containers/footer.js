@@ -50,7 +50,7 @@ const Footer = () => (
         </a>
       </div>
       <div style={{ flexDirection: "column", display: "flex" }}>
-        {/* <Link
+        <Link
           style={{
             textDecoration: "none",
             color: "white",
@@ -61,7 +61,7 @@ const Footer = () => (
           to="/terms"
         >
           Terms of service
-        </Link> */}
+        </Link>
         <Link
           style={{
             textDecoration: "none",
