@@ -268,7 +268,7 @@ const Content = ({ activeFeature }) => (
         />
       </a>
       <p style={styleContactUsText}>
-        Or contact us at{" "}
+        Or email us at{" "}
         <a
           style={{ color: "white", fontWeight: "bold" }}
           href="mailto:contact@hive-keychain.com"
