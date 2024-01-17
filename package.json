@@ -28,7 +28,7 @@
   },
   "scripts": {
     "dev": "npx react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "start": "serve -s build",
     "heroku-postbuild": "webpack -p",
     "predeploy": "npm run build",
