@@ -211,6 +211,20 @@ const Content = ({ activeFeature }) => (
             alt="Intro"
           />
         </div>
+        <div>
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/9.png"
+            alt="Intro"
+          />
+        </div>
+        <div>
+          <img
+            height={width > 600 ? 600 : 400}
+            src="img/screenshots/10.png"
+            alt="Intro"
+          />
+        </div>
       </CustomCarousel>
     </CarouselSection>
     {/* create review section */}
