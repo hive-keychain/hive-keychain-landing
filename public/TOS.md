@@ -2,7 +2,7 @@
 
 ## Hive Keychain, Ltd.
 
-## Effective Date: January 17th, 2024
+## Effective Date: May 21st, 2024
 
 Hive Keychain Ltd. ("Hive Keychain", the "Company", "we", "us" or "our") is a blockchain development company focused on facilitating adoption and use of the Hive blockchain. Hive Keychain hosts a landing page at [hive-keychain.com](https://hive-keychain.com/), that provides information regarding the different Hive Keychain products, as well as sub-domains for Hive Keychain's product offerings (collectively, the "Site"), which includes text, images, links to opensource code hosted on Github, and other materials and third party information.
 
@@ -115,11 +115,11 @@ The Site and Services may contain links to Third-Party Services (including, with
 
 You may be able to link your Extension or Apps to your accounts on third-party platforms, sites and services, to enable access to such accounts from your Extension or Apps. In doing so, you understand and agree that all transactions made when accessing such accounts from your Wallet are subject to these Terms and to the terms of use, privacy policies, and other terms, conditions and policies imposed by the providers of such third-party sites, services and platforms.
 
-### 10. Keychain Swap (Beta)
+### 10. Keychain Swap
 
-Keychain Swap ("Swap") is a custodial Service that enables you to swap a Hive blockchain Digital Asset into another, by transferring a digital asset to the @keychain.swap account from the Extension or the App. The Swap Service compares different providers (including but not limited to Hive internal market, L1 to L2 bridges, Hive-Engine internal market, liquidity pools)to find the best Swap possible.
+Keychain Swap ("Swap") is a Service that enables you to swap a Hive blockchain Digital Asset into another. The Swap Service compares different providers (including but not limited to Hive internal market, L1 to L2 bridges, Hive-Engine internal market, liquidity pools) to find the best Swap possible, instantly starts the swap and returns the new tokens to the same wallet account.
 
-By using this Service, you acknowledge that (i) the use of the Swap feature may incure fees, as disclosed in [the fees page](#/fees) and/or while using the Service, (ii) the output token amount is an estimation and as such is subject to change following market changes, (iii) some swaps necessitate several steps, and as such, if the slippage is reached during an intermediate stage, this intermediate token will be returned to you, (iv) there is no slippage protection on the Hive-Engine market, the Swap Service will cancel the Swap if a new estimation reaches the slippage, but there is no guarantee that the slippage won't be exceeded due to a sudden market change, (v) third-party providers fees are subject to changes unbeknownst of Hive Keychain and (vi) the Swap Service is relying on bot Hive and Hive-Engine RPC Nodes to keep its data up-to-date and as such, can experience downtime during which user funds are inaccessible.
+By using this Service, you acknowledge that (i) the use of the Swap feature may incure fees, as disclosed in [the fees page](#/fees) and/or while using the Service, (ii) the output token amount is an estimation and as such is subject to change following market changes, (iii) some swaps necessitate several steps, and as such, if the slippage is reached during an intermediate stage, this intermediate token will be returned to you, (iv) there is no slippage protection on the Hive-Engine market, the Swap Service will cancel the Swap if a new estimation reaches the slippage, but there is no guarantee that the slippage won't be exceeded due to a sudden market change, (v) third-party providers fees are subject to changes unbeknownst of Hive Keychain and (vi) the Swap Service is relying on both Hive and Hive-Engine RPC Nodes to keep its data up-to-date and as such, can experience downtime.
 
 Furthermore, by using Keychain Swap, you understand that it is an experimental feature and as such, agree that Hive Keychain should not be liable for any losses caused by the use of the Swap Service.
 
