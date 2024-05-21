@@ -117,11 +117,10 @@ You may be able to link your Extension or Apps to your accounts on third-party p
 
 ### 10. Keychain Swap
 
-Keychain Swap ("Swap") is a Service that enables you to swap a Hive blockchain Digital Asset into another. The Swap Service compares different providers (including but not limited to Hive internal market, L1 to L2 bridges, Hive-Engine internal market, liquidity pools) to find the best Swap possible, instantly starts the swap and returns the new tokens to the same wallet account.
+Keychain Swap ("Swap") is a Service that enables you to swap a Hive blockchain Digital Asset into another. The Swap Service compares different providers (including but not limited to Hive internal market, L1 to L2 bridges, Hive-Engine internal market, liquidity pools) to find the best Swap possible, instantly starts the swap and returns the new tokens to the same wallet address.
 
 By using this Service, you acknowledge that (i) the use of the Swap feature may incure fees, as disclosed in [the fees page](#/fees) and/or while using the Service, (ii) the output token amount is an estimation and as such is subject to change following market changes, (iii) some swaps necessitate several steps, and as such, if the slippage is reached during an intermediate stage, this intermediate token will be returned to you, (iv) there is no slippage protection on the Hive-Engine market, the Swap Service will cancel the Swap if a new estimation reaches the slippage, but there is no guarantee that the slippage won't be exceeded due to a sudden market change, (v) third-party providers fees are subject to changes unbeknownst of Hive Keychain and (vi) the Swap Service is relying on both Hive and Hive-Engine RPC Nodes to keep its data up-to-date and as such, can experience downtime.
-
-Furthermore, by using Keychain Swap, you understand that it is an experimental feature and as such, agree that Hive Keychain should not be liable for any losses caused by the use of the Swap Service.
+Hive Keychain should not be liable for any losses caused by the unability to access the Service.
 
 ### 11. Warranty Disclaimers
 
