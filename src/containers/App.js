@@ -7,8 +7,10 @@ import Content from "./content";
 import Footer from "./footer";
 import Header from "./header";
 import Fees from "./sections/fees";
+import Invoice from "./sections/invoice";
 import Privacy from "./sections/privacy";
 import Terms from "./sections/terms";
+
 // Create app component
 class App extends Component {
   // Render component
@@ -35,6 +37,7 @@ class App extends Component {
           <Route path="terms" element={<Terms />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="fees" element={<Fees />} />
+          <Route path="invoice/*" element={<Invoice />} />
         </Routes>
         <Footer />
       </div>

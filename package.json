@@ -27,7 +27,7 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "dev": "npx react-scripts start",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider npx react-scripts start",
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "start": "serve -s build",
     "heroku-postbuild": "webpack -p",
