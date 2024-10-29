@@ -12,7 +12,7 @@ const Invoice = () => {
   }, [to]);
 
   return (
-    <div style={{ marginVertical: "60px" }}>
+    <div style={{ display: "flex", flex: 1, flexDirection: "column" }}>
       <h1>Keychain Store Invoice</h1>
       <p>
         If the App you are using didn't redirect you automatically to Keychain
