@@ -8,6 +8,8 @@
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "gh-pages": "^3.1.0",
+    "hive-qrcode": "github:hive-keychain/hive-qrcode",
+    "hive-uri": "^0.2.5",
     "html-react-parser": "^1.2.4",
     "react": "^16.5.2",
     "react-alice-carousel": "^1.12.0",
@@ -44,6 +46,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__traverse": "^7.20.6",
     "assert": "^2.0.0",
     "process": "^0.11.10",
     "serve": "^11.3.2"
