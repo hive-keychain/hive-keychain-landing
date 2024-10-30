@@ -3,8 +3,8 @@ import { decode } from "hive-uri";
 import React, { useEffect } from "react";
 const Invoice = () => {
   const to = window.location.href.replace(
-    // "http://localhost:3000/#invoice/",
-    "https://hive-keychain.com/#invoice/",
+    "http://localhost:3000/#invoice/",
+    // "https://hive-keychain.com/#invoice/",
     "hive://sign/op/"
   );
 
@@ -26,14 +26,16 @@ const Invoice = () => {
           ></HiveQRCode>
         }
       </div>
-      <p>
+      <br />
+      <a href={to}>Invoice link</a>
+      <br />
+      <p style={{ width: "80%", margin: "auto" }}>
         If you are already on your mobile and the App you are using didn't
         redirect you automatically to the Keychain App, select "Open on Browser"
         among your App options, or copy paste this link in your usual browser.
-        <br />
-        <br />
-        <a href={to}>Invoice link</a>
       </p>
+      <br />
+      <br />
     </div>
   );
 };
