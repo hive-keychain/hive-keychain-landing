@@ -3,8 +3,8 @@ import { decode } from "hive-uri";
 import React, { useEffect } from "react";
 const Invoice = () => {
   const to = window.location.href.replace(
-    "http://localhost:3000/#invoice/",
-    // "https://hive-keychain.com/#invoice/",
+    // "http://localhost:3000/#invoice/",
+    "https://hive-keychain.com/#invoice/",
     "hive://sign/op/"
   );
 
